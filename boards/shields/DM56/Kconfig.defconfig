@@ -1,0 +1,22 @@
+if SHIELD_DM56_LEFT
+
+    config ZMK_KEYBOARD_NAME
+        default "DM56"
+
+    config ZMK_SPLIT_BLE_ROLE_CENTRAL
+        default y
+endif
+
+if SHIELD_DM56_RIGHT
+
+    config ZMK_KEYBOARD_NAME
+        default "DM56 Right"
+
+endif
+
+if SHIELD_DM56_LEFT || SHIELD_DM56_RIGHT
+
+    config ZMK_SPLIT
+        default y
+
+endif
