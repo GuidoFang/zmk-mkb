@@ -30,10 +30,10 @@
             bindings = <
     &kp ESC   &kp N1    &kp N2   &kp N3    &kp N4    &kp N5                             &kp N6    &kp N7    &kp N8    &kp N9    &kp N0   &tog RAISE
     &kp TAB   &kp Q     &kp W    &kp E     &kp R     &kp T                              &kp Y     &kp U     &kp I     &kp O     &kp P    &kp BSLH
-    &mo LSHFT &kp A     &kp S    &kp D     &kp F     &kp G                              &kp H     &kp J     &kp K     &kp L     &kp SEMI &kp SQT
+    &kp LSHFT &kp A     &kp S    &kp D     &kp F     &kp G                              &kp H     &kp J     &kp K     &kp L     &kp SEMI &kp SQT
     &kp LCTRL &kp Z     &kp X    &kp C     &kp V     &kp B                              &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH &kp RSHFT
                         &kp LBKT  &kp RBKT                                              &kp DOWN  &kp UP    &kp LBKT  &kp RBKT
-                                                     &tog RAISE &kp SPACE               &kp KP_ENTER  &mo LOWER
+                                                     &mo RAISE &kp SPACE               &kp KP_ENTER  &mo LOWER
                                                      &kp TAB   &kp HOME                 &kp BSPC  &kp SPACE
                                                      &kp BSPC  &kp GRAVE                &kp RGUI  &kp LALT   
             >;
@@ -52,7 +52,7 @@
             >;
         };
 
-        lower_layer {
+        adjust_layer {
             bindings = <
     &kp F12    &kp F1    &kp F2   &kp F3     &kp F4    &kp F5                            &kp F6        &kp F7       &kp F8           &kp F9            &kp F10     &kp F11
     &sl ADJUST &none     &none    &none      &none     &none                             &none         &kp LC(1)    &kp LC(PG_UP)    &kp LC(PG_DN)     &kp LC(9)   &none 
@@ -77,7 +77,7 @@
             >;
         };
 
-        adjust_layer {
+        lower_layer {
             bindings = <
     &none     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                         &none       &none      &none     &none     &none    &none  
     &trans    &out OUT_USB &out OUT_BLE &none        &sys_reset   &tog MAC                             &none       &sys_reset &none     &none     &none    &none   
